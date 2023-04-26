@@ -1,3 +1,7 @@
-import pandas as pd
-print("Hello world")
-print("rahul bhoyar")
+"""This module prints the rahul bhoyar"""
+
+from app.project import print_rahul
+
+
+NAME_RAHUL = print_rahul()
+print(NAME_RAHUL)
