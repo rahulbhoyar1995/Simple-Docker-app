@@ -1,7 +1,7 @@
 """This module prints the rahul bhoyar"""
 
-from app.project import print_rahul
+from app.project import read_data
 
 
-NAME_RAHUL = print_rahul()
-print(NAME_RAHUL)
+MOVIE_DATA = read_data()
+print(MOVIE_DATA)
