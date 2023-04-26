@@ -1,0 +1,34 @@
+
+docker build -t rahulbhoyar/rrb-python-app:v1 .
+
+docker run -p 4000:80 rahulbhoyar/rrb-python-app:v1
+
+( if error docker login)
+
+docker push rahulbhoyar/rrb-python-app:v1
+
+# to deploy
+kubectl apply -f rrb-python-app-deployment.yaml
+
+# to get service
+
+kubectl apply -f rrb-python-app-service.yaml
+minikube start
+
+# TO GET ALL deployments
+kubectl get deployments
+
+# TO GET ALL SERVICES
+
+kubectl get services
+# TO DELETE
+
+
+kubectl delete deployment <deployment-name>
+Replace <deployment-name> with the name of your deployment.
+
+Run the following command to delete the service:
+
+arduino
+Copy code
+kubectl delete service <service-name>

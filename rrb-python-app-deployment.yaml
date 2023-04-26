@@ -1,0 +1,26 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: rrb-python-app
+spec:
+  replicas: 3
+  selector:
+    matchLabels:
+      app: rrb-python-app
+  template:
+    metadata:
+      labels:
+        app: rrb-python-app
+    spec:
+      containers:
+      - name: rrb-python-app
+        image: rahulbhoyar/rrb-python-app:v1
+        resources:
+            limits:
+                cpu: "1"
+                memory: "1Gi"
+            requests:
+                cpu: "0.5"
+                memory: "512Mi"
+        ports:
+        - containerPort: 5000
