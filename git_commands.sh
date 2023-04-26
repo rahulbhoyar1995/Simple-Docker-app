@@ -1,10 +1,10 @@
 #!/bin/bash
 
 # Initialize a new Git repository
-git branch dev2
+git branch dev1
 
 # Add all files to the repository
-git checkout dev2
+git checkout dev1
 
 # Commit the changes with a message
 #git commit -m "Initial commit"
@@ -12,5 +12,5 @@ git checkout dev2
 # Add a remote repository and push changes
 #git remote add origin https://github.com/rahulbhoyar1995/Simple-Docker-app.git
 
+git push origin dev1
 
-git push origin dev2
